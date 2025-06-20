@@ -17,11 +17,11 @@
 		</header>
 		<main class="flex flex-col gap-10 h-full">
 			<section class="bg-black/10 text-center rounded-[20px] p-7">
-				<div class="bg-lime-200 text-center rounded-[20px] h-full">
+				<div class="text-center rounded-[20px] h-full">
 					<h2
-						class="text-white font-[Inter] text-[48px] font-bold bg-lime-700 text-center rounded-[20px]"
+						class="text-white/80 font-[Inter] text-[48px] font-bold text-center rounded-[20px]"
 					>
-						Weight of the hive
+						Honey weight
 					</h2>
 					<div class="grid grid-cols-2 h-[70%]">
 						<div
@@ -29,7 +29,7 @@
 						>
 							<div class="flex flex-col content-center">
 								<h3
-									class="text-black font-[Inter] text-[40px] font-bold"
+									class="text-black/80 font-[Inter] text-[40px] font-bold"
 								>
 									32Kg
 								</h3>
@@ -41,14 +41,14 @@
 								</p>
 							</div>
 							<p
-								class="text-black/70 font-[Inter] text-[36px] font-bold"
+								class="text-black/70 font-[Inter] text-[36px] font-bold bg-amber-200 rounded-[999px] border-2 border-amber-950"
 								id="MSG"
 							>
 								Time to go 🚗
 							</p>
 						</div>
 						<canvas
-							class="h-full w-full bg-amber-500 rounded-[20px]"
+							class="h-full w-full bg-amber-200 rounded-[20px] m-5"
 						></canvas>
 					</div>
 				</div>
@@ -56,11 +56,11 @@
 			<section
 				class="bg-black/10 text-center rounded-[20px] p-7 grid grid-cols-3 gap-10"
 			>
-				<div class="bg-lime-200 text-center rounded-[20px] h-full">
+				<div class="text-center rounded-[20px] h-full">
 					<h2
-						class="text-white font-[Inter] text-[24px] font-medium bg-lime-700 text-center rounded-[20px]"
+						class="text-white/80 font-[Inter] text-[24px] font-medium text-center rounded-[20px]"
 					>
-						Hive temperatures
+						Temperatures
 					</h2>
 					<div class="grid grid-rows-2">
 						<div
@@ -68,7 +68,7 @@
 						>
 							<div class="flex flex-col content-center">
 								<h3
-									class="text-black font-[Inter] text-[24px] font-bold"
+									class="text-black/90 font-[Inter] text-[24px] font-bold"
 								>
 									32 °C
 								</h3>
@@ -79,23 +79,31 @@
 									AVG : 30 °C
 								</p>
 							</div>
-							<p
-								class="text-black/50 font-[Inter] text-[14px] font-bold"
-								id="MSG"
-							>
-								Temperature and normal 👌
-							</p>
+							<div class="bg-white/30 rounded-[20px] m-5">
+								<p
+									class="text-black/90 font-[Inter] text-[40px] font-bold"
+									id="Emoji"
+								>
+									👌
+								</p>
+								<p
+									class="text-black/90 font-[Inter] text-[18px] font-bold"
+									id="MSG"
+								>
+									Temperature is normal
+								</p>
+							</div>
 						</div>
 						<canvas
-							class="h-full w-full bg-amber-500 rounded-[20px]"
+							class="h-full w-full bg-amber-200 rounded-[20px] m-5"
 						></canvas>
 					</div>
 				</div>
-				<div class="bg-lime-200 text-center rounded-[20px] h-full">
+				<div class="text-center rounded-[20px] h-full">
 					<h2
-						class="text-white font-[Inter] text-[24px] font-medium bg-lime-700 text-center rounded-[20px]"
+						class="text-white/80 font-[Inter] text-[24px] font-medium text-center rounded-[20px]"
 					>
-						Hive humidity
+						Humidity
 					</h2>
 					<div class="grid grid-rows-2">
 						<div
@@ -103,7 +111,7 @@
 						>
 							<div class="flex flex-col content-center">
 								<h3
-									class="text-black font-[Inter] text-[24px] font-bold"
+									class="text-black/90 font-[Inter] text-[24px] font-bold"
 								>
 									52.3%
 								</h3>
@@ -114,23 +122,31 @@
 									AVG : 52.3%
 								</p>
 							</div>
-							<p
-								class="text-black/50 font-[Inter] text-[14px] font-bold"
-								id="MSG"
-							>
-								The humidity is normal 👌
-							</p>
+							<div class="bg-white/30 rounded-[20px] m-5">
+								<p
+									class="text-black/90 font-[Inter] text-[40px] font-bold"
+									id="Emoji"
+								>
+									👌
+								</p>
+								<p
+									class="text-black/90 font-[Inter] text-[18px] font-bold"
+									id="MSG"
+								>
+									The humidity is normal
+								</p>
+							</div>
 						</div>
 						<canvas
-							class="h-full w-full bg-amber-500 rounded-[20px]"
+							class="h-full w-full bg-amber-200 rounded-[20px] m-5"
 						></canvas>
 					</div>
 				</div>
-				<div class="bg-orange-300 text-center rounded-[20px] h-full">
+				<div class="text-center rounded-[20px] h-full">
 					<h2
-						class="text-white font-[Inter] text-[24px] font-medium bg-orange-600 text-center rounded-[20px]"
+						class="text-white/80 font-[Inter] text-[24px] font-medium text-center rounded-[20px]"
 					>
-						Number of hive passages
+						Number of passages
 					</h2>
 					<div class="grid grid-rows-2">
 						<div
@@ -138,7 +154,7 @@
 						>
 							<div class="flex flex-col content-center">
 								<h3
-									class="text-black font-[Inter] text-[24px] font-bold"
+									class="text-black/90 font-[Inter] text-[24px] font-bold"
 								>
 									800k
 								</h3>
@@ -149,15 +165,23 @@
 									AVG : 758k
 								</p>
 							</div>
-							<p
-								class="text-black/50 font-[Inter] text-[14px] font-bold"
-								id="MSG"
-							>
-								The number of bee passages and low 📉
-							</p>
+							<div class="bg-white/30 rounded-[20px] m-5">
+								<p
+									class="text-black/90 font-[Inter] text-[40px] font-bold"
+									id="Emoji"
+								>
+									📉
+								</p>
+								<p
+									class="text-black/90 font-[Inter] text-[18px] font-bold"
+									id="MSG"
+								>
+									The number of bee passages is low
+								</p>
+							</div>
 						</div>
 						<canvas
-							class="h-full w-full bg-amber-500 rounded-[20px]"
+							class="h-full w-full bg-amber-200 rounded-[20px] m-5"
 						></canvas>
 					</div>
 				</div>
