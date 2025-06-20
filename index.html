@@ -4,11 +4,166 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body>
-		<header class="Box">
-			<h1>BzzBzz Dashboard</h1>
+	<body class="bg-yellow-100 h-screen flex flex-col gap-10 p-10">
+		<header
+			class="rounded-[20px] bg-black/10 flex items-center justify-center"
+		>
+			<h1 class="text-black font-[Inter] text-[36px] font-bold">
+				BzzBzz Dashboard
+			</h1>
 		</header>
+		<main class="flex flex-col gap-10 h-full">
+			<section class="bg-black/10 text-center rounded-[20px] p-7">
+				<div class="bg-lime-200 text-center rounded-[20px] h-full">
+					<h2
+						class="text-white font-[Inter] text-[48px] font-bold bg-lime-700 text-center rounded-[20px]"
+					>
+						Weight of the hive
+					</h2>
+					<div class="grid grid-cols-2 h-[70%]">
+						<div
+							class="flex flex-col content-center justify-around"
+						>
+							<div class="flex flex-col content-center">
+								<h3
+									class="text-black font-[Inter] text-[40px] font-bold"
+								>
+									32Kg
+								</h3>
+								<p
+									class="text-black/50 font-[Inter] text-[24px] font-bold"
+									id="AVG"
+								>
+									AVG : 28Kg
+								</p>
+							</div>
+							<p
+								class="text-black/70 font-[Inter] text-[36px] font-bold"
+								id="MSG"
+							>
+								Time to go 🚗
+							</p>
+						</div>
+						<canvas
+							class="h-full w-full bg-amber-500 rounded-[20px]"
+						></canvas>
+					</div>
+				</div>
+			</section>
+			<section
+				class="bg-black/10 text-center rounded-[20px] p-7 grid grid-cols-3 gap-10"
+			>
+				<div class="bg-lime-200 text-center rounded-[20px] h-full">
+					<h2
+						class="text-white font-[Inter] text-[24px] font-medium bg-lime-700 text-center rounded-[20px]"
+					>
+						Hive temperatures
+					</h2>
+					<div class="grid grid-rows-2">
+						<div
+							class="flex flex-col content-center justify-around"
+						>
+							<div class="flex flex-col content-center">
+								<h3
+									class="text-black font-[Inter] text-[24px] font-bold"
+								>
+									32 °C
+								</h3>
+								<p
+									class="text-black/50 font-[Inter] text-[14px] font-bold"
+									id="AVG"
+								>
+									AVG : 30 °C
+								</p>
+							</div>
+							<p
+								class="text-black/50 font-[Inter] text-[14px] font-bold"
+								id="MSG"
+							>
+								Temperature and normal 👌
+							</p>
+						</div>
+						<canvas
+							class="h-full w-full bg-amber-500 rounded-[20px]"
+						></canvas>
+					</div>
+				</div>
+				<div class="bg-lime-200 text-center rounded-[20px] h-full">
+					<h2
+						class="text-white font-[Inter] text-[24px] font-medium bg-lime-700 text-center rounded-[20px]"
+					>
+						Hive humidity
+					</h2>
+					<div class="grid grid-rows-2">
+						<div
+							class="flex flex-col content-center justify-around"
+						>
+							<div class="flex flex-col content-center">
+								<h3
+									class="text-black font-[Inter] text-[24px] font-bold"
+								>
+									52.3%
+								</h3>
+								<p
+									class="text-black/50 font-[Inter] text-[14px] font-bold"
+									id="AVG"
+								>
+									AVG : 52.3%
+								</p>
+							</div>
+							<p
+								class="text-black/50 font-[Inter] text-[14px] font-bold"
+								id="MSG"
+							>
+								The humidity is normal 👌
+							</p>
+						</div>
+						<canvas
+							class="h-full w-full bg-amber-500 rounded-[20px]"
+						></canvas>
+					</div>
+				</div>
+				<div class="bg-orange-300 text-center rounded-[20px] h-full">
+					<h2
+						class="text-white font-[Inter] text-[24px] font-medium bg-orange-600 text-center rounded-[20px]"
+					>
+						Number of hive passages
+					</h2>
+					<div class="grid grid-rows-2">
+						<div
+							class="flex flex-col content-center justify-around"
+						>
+							<div class="flex flex-col content-center">
+								<h3
+									class="text-black font-[Inter] text-[24px] font-bold"
+								>
+									800k
+								</h3>
+								<p
+									class="text-black/50 font-[Inter] text-[14px] font-bold"
+									id="AVG"
+								>
+									AVG : 758k
+								</p>
+							</div>
+							<p
+								class="text-black/50 font-[Inter] text-[14px] font-bold"
+								id="MSG"
+							>
+								The number of bee passages and low 📉
+							</p>
+						</div>
+						<canvas
+							class="h-full w-full bg-amber-500 rounded-[20px]"
+						></canvas>
+					</div>
+				</div>
+			</section>
+		</main>
 	</body>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="index.js"></script>
 </html>
